@@ -20,9 +20,11 @@
 
 ## Live preview
 
-| Terminal broadcast | Research signal |
-|:------------------:|:---------------:|
-| <img src="assets/x/post-hero.jpg" alt="Terminal UI" width="420" /> | <img src="assets/x/post-live.png" alt="$REFUSE live" width="420" /> |
+<p align="center">
+  <img src="assets/x/post-hero.jpg" alt="Terminal broadcast UI" width="720" />
+  <br />
+  <sub>Terminal broadcast · refusalfm.fun</sub>
+</p>
 
 | MoE safety viz | Brand mark |
 |:--------------:|:----------:|
@@ -114,7 +116,6 @@ All images live under [`assets/x/`](assets/x/):
 | File | Source | Use |
 |------|--------|-----|
 | `post-hero.jpg` | X @refusalAI | Terminal site capture |
-| `post-live.png` | X channel | `$REFUSE` live signal |
 | `avatar.jpg` | X profile | Official identity |
 | `avatar-alt.png` | X / brand | Secondary mark |
 | `banner-brand.jpg` | Brand | README + hero banner |
