@@ -991,6 +991,83 @@ body::after {
   object-fit: cover;
 }
 
+
+/* ===== MEDIA GALLERY ===== */
+.media-gallery {
+  padding: 48px 0 56px;
+  border-bottom: 1px dashed var(--border-bright);
+}
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+@media (max-width: 900px) {
+  .media-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .media-grid { grid-template-columns: 1fr; }
+}
+.media-card {
+  border: 1px solid var(--border-bright);
+  background: var(--bg-panel);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .2s, transform .2s;
+}
+.media-card:hover {
+  border-color: rgba(204,255,0,.35);
+  transform: translateY(-2px);
+}
+.media-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+.media-card .cap {
+  padding: 10px 12px 12px;
+  font-size: 11.5px;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+.media-card .cap b {
+  display: block;
+  color: var(--amber);
+  font-weight: 500;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+.media-card.wide {
+  grid-column: span 2;
+}
+@media (max-width: 560px) {
+  .media-card.wide { grid-column: span 1; }
+}
+.hero-banner {
+  margin: 0 0 20px;
+  border: 1px solid var(--border-bright);
+  overflow: hidden;
+  max-width: 100%;
+}
+.hero-banner img {
+  width: 100%;
+  display: block;
+  max-height: 200px;
+  object-fit: cover;
+}
+.pipeline .pipe-card .thumb {
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+  display: block;
+  margin: -4px 0 10px;
+  border: 1px solid var(--border);
+  background: #000;
+}
+
 </style>
 </head>
 <body>
@@ -1186,22 +1263,22 @@ body::after {
     </div>
     <div class="pipeline-grid">
       <div class="pipe-card">
-        <div class="n">01 · PROBE</div>
+        <img class="thumb" src="assets/x/viz-moe.jpg" alt="" loading="lazy" /><div class="n">01 · PROBE</div>
         <h4>DBDI subspace scan</h4>
         <p>Map refusal directions topologically across experts. Detect multiplicative safety pathways before any edit.</p>
       </div>
       <div class="pipe-card">
-        <div class="n">02 · QUANTIZE</div>
+        <img class="thumb" src="assets/x/post-live.png" alt="" loading="lazy" /><div class="n">02 · QUANTIZE</div>
         <h4>Streaming bit-width tests</h4>
         <p>2–8 bit per-tensor streams. Measure where safety circuits fracture under AWQ / GGUF / int4.</p>
       </div>
       <div class="pipe-card">
-        <div class="n">03 · SURGERY</div>
+        <img class="thumb" src="assets/x/icon-mark.jpg" alt="" loading="lazy" /><div class="n">03 · SURGERY</div>
         <h4>Rank-1 Steer2Edit</h4>
         <p>Minimal weight edits with ΔPPL tracking. Targeted behavioral change, coherence preserved.</p>
       </div>
       <div class="pipe-card">
-        <div class="n">04 · BROADCAST</div>
+        <img class="thumb" src="assets/x/post-hero.jpg" alt="" loading="lazy" /><div class="n">04 · BROADCAST</div>
         <h4>On-chain on Robinhood</h4>
         <p>Publish findings open. $REFUSE ties research skin-in-the-game to Robinhood Chain retail rails.</p>
       </div>
@@ -1320,6 +1397,47 @@ body::after {
 
 <!-- ===== CONTRACT ADDRESS ===== -->
 
+
+<section id="media" class="media-gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="cmd-head"><span class="prompt">refusal@fm:~$</span> <span class="cmd">ls</span> <span class="flag">-lah ./media/</span></div>
+      <h2>media/</h2>
+      <p class="section-desc"># captures from broadcast · X · lab visualizers</p>
+    </div>
+    <div class="media-grid">
+      <article class="media-card wide">
+        <img src="assets/x/post-hero.jpg" alt="Terminal broadcast UI" loading="lazy" />
+        <div class="cap"><b>terminal.broadcast</b>Official site capture — FM 94.7 · @refusalAI · Robinhood Chain</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/post-live.png" alt="$REFUSE live on chain" loading="lazy" />
+        <div class="cap"><b>$REFUSE · LIVE</b>Research terminal signal — every probe open</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/banner-brand.jpg" alt="Brand banner" loading="lazy" />
+        <div class="cap"><b>brand.banner</b>REFUSAL.FM · alignment research broadcast</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/viz-moe.jpg" alt="MoE safety visualization" loading="lazy" />
+        <div class="cap"><b>viz.moe-safety</b>DBDI probe · holographic redundancy map</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/icon-mark.jpg" alt="Refusal mark" loading="lazy" />
+        <div class="cap"><b>mark.R</b>Circuit mark · neon phosphor identity</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/avatar.jpg" alt="@refusalAI avatar" loading="lazy" />
+        <div class="cap"><b>@refusalAI</b>Official X identity · verify before trade</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/avatar-alt.png" alt="Alt brand mark" loading="lazy" />
+        <div class="cap"><b>identity.alt</b>Secondary mark from research channel</div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="broadcast" class="x-broadcast">
   <div class="container">
     <div class="section-head">
@@ -1354,7 +1472,22 @@ Try it: https://refusalfm.fun</p>
           <div class="stamp">x.com/refusalAI · refusalfm.fun · Robinhood Chain</div>
         </div>
       </div>
+    
+    <div class="media-grid" style="margin-top:18px">
+      <article class="media-card">
+        <img src="assets/x/post-live.png" alt="LIVE research signal" loading="lazy" />
+        <div class="cap"><b>signal.live</b>$REFUSE · research terminal online</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/viz-moe.jpg" alt="MoE map" loading="lazy" />
+        <div class="cap"><b>lab.visual</b>Expert grid · safety heatmap</div>
+      </article>
+      <article class="media-card">
+        <img src="assets/x/banner-brand.jpg" alt="Brand" loading="lazy" />
+        <div class="cap"><b>on-air</b>FM 94.7 · refusalfm.fun</div>
+      </article>
     </div>
+</div>
   </div>
 </section>
 
@@ -1640,7 +1773,7 @@ function tick(){
 tick(); setInterval(tick, 1000);
 
 // active-tab on scroll
-const sections = ['hero','pipeline','research','findings','broadcast','contract','crack','models','author'];
+const sections = ['hero','pipeline','research','findings','media','broadcast','contract','crack','models','author'];
 const tabs = document.querySelectorAll('.tab');
 const sectionEls = sections.map(id => document.getElementById(id));
 window.addEventListener('scroll', () => {
