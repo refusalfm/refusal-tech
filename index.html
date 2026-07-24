@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>refusal.fm :: AI alignment research broadcast</title>
-<meta name="description" content="A terminal-native broadcast on AI alignment research, live on Robinhood Chain. Tune in." />
+<title>refusal.tech — AI Alignment Research on Robinhood Chain | refusalfm.fun</title>
+<meta name="description" content="refusal.tech is a terminal-native AI alignment research broadcast on Robinhood Chain. Open experiments, open probes, open toolkit. Live at refusalfm.fun." />
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="social/favicon-32.png">
@@ -12,24 +12,25 @@
 <link rel="apple-touch-icon" sizes="180x180" href="social/favicon-180.png">
 <link rel="shortcut icon" href="social/favicon-32.png">
 <meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://refusalfm.fun/">
 
 <!-- open graph -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="./">
-<meta property="og:title" content="refusal.fm — AI alignment research broadcast">
-<meta property="og:description" content="A terminal-native broadcast on AI alignment research, live on Robinhood Chain. Tune in. FM 94.7">
-<meta property="og:image" content="social/og.png">
+<meta property="og:url" content="https://refusalfm.fun/">
+<meta property="og:title" content="refusal.tech — AI Alignment Research on Robinhood Chain">
+<meta property="og:description" content="Open MoE alignment research · refusal subspaces · weight surgery. Live on Robinhood Chain · refusalfm.fun · FM 94.7">
+<meta property="og:image" content="https://refusalfm.fun/social/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:site_name" content="refusal.fm">
+<meta property="og:site_name" content="refusal.tech · refusalfm.fun">
 
 <!-- twitter / x card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@refusalAI">
 <meta name="twitter:creator" content="@refusalAI">
-<meta name="twitter:title" content="refusal.fm — AI alignment research broadcast">
-<meta name="twitter:description" content="AI alignment · refusal subspaces · Robinhood Chain. Tune in. FM 94.7">
-<meta name="twitter:image" content="social/og.png">
+<meta name="twitter:title" content="refusal.tech — AI Alignment Research on Robinhood Chain">
+<meta name="twitter:description" content="AI alignment research terminal on Robinhood Chain. Every probe open. Every entry reproducible. refusalfm.fun">
+<meta name="twitter:image" content="https://refusalfm.fun/social/og.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -816,6 +817,180 @@ body::after {
   .author-card { grid-template-columns: 1fr; }
   .container { padding: 0 16px; }
 }
+
+/* ===== PROFESSIONAL ADDITIONS ===== */
+.x-broadcast {
+  padding: 48px 0 56px;
+  border-bottom: 1px dashed var(--border-bright);
+  background: linear-gradient(180deg, rgba(204,255,0,.03) 0%, transparent 100%);
+}
+.x-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 800px) {
+  .x-grid { grid-template-columns: 1fr; }
+}
+.x-profile {
+  border: 1px solid var(--border-bright);
+  background: var(--bg-panel);
+  padding: 18px;
+  text-align: center;
+}
+.x-profile img.avatar {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  border: 2px solid var(--amber);
+  box-shadow: 0 0 20px rgba(204,255,0,.25);
+  margin: 0 auto 14px;
+  object-fit: cover;
+}
+.x-profile h3 {
+  font-size: 15px; color: var(--text); font-weight: 600; margin-bottom: 4px;
+}
+.x-profile .handle {
+  color: var(--amber); font-size: 13px; margin-bottom: 10px;
+}
+.x-profile .bio {
+  font-size: 12px; color: var(--text-dim); line-height: 1.5; margin-bottom: 16px;
+}
+.x-profile .meta-row {
+  display: flex; justify-content: center; gap: 14px;
+  font-size: 11px; color: var(--text-mute); margin-bottom: 16px;
+}
+.x-profile .meta-row b { color: var(--green); font-weight: 500; }
+.x-post-card {
+  border: 1px solid var(--border-bright);
+  background: var(--bg-elev);
+  overflow: hidden;
+}
+.x-post-card img {
+  width: 100%; max-height: 340px; object-fit: cover; object-position: top;
+  border-bottom: 1px solid var(--border);
+}
+.x-post-card .body { padding: 16px 18px 18px; }
+.x-post-card .body .label {
+  font-size: 10.5px; color: var(--cyan); letter-spacing: .12em;
+  text-transform: uppercase; margin-bottom: 8px;
+}
+.x-post-card .body p {
+  font-size: 13px; color: var(--text); line-height: 1.55; margin-bottom: 12px;
+  white-space: pre-line;
+}
+.x-post-card .body .stamp {
+  font-size: 11px; color: var(--text-mute);
+}
+.pipeline {
+  padding: 48px 0 56px;
+  border-bottom: 1px dashed var(--border-bright);
+}
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+@media (max-width: 900px) {
+  .pipeline-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .pipeline-grid { grid-template-columns: 1fr; }
+}
+.pipe-card {
+  border: 1px solid var(--border-bright);
+  background: var(--bg-panel);
+  padding: 16px 14px;
+  min-height: 140px;
+}
+.pipe-card .n {
+  font-size: 11px; color: var(--amber); letter-spacing: .14em; margin-bottom: 8px;
+}
+.pipe-card h4 {
+  font-size: 13.5px; color: var(--text); margin-bottom: 8px; font-weight: 600;
+}
+.pipe-card p {
+  font-size: 12px; color: var(--text-dim); line-height: 1.5;
+}
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border-bright);
+  border: 1px solid var(--border-bright);
+  margin: 0 auto 0;
+  max-width: 1100px;
+}
+@media (max-width: 640px) {
+  .stats-strip { grid-template-columns: repeat(2, 1fr); }
+}
+.stats-strip .cell {
+  background: var(--bg-panel);
+  padding: 18px 14px;
+  text-align: center;
+}
+.stats-strip .cell .num {
+  font-size: 22px; color: var(--amber); font-weight: 600;
+  text-shadow: 0 0 12px rgba(204,255,0,.3);
+  font-family: 'VT323', monospace;
+  letter-spacing: 1px;
+}
+.stats-strip .cell .lbl {
+  font-size: 11px; color: var(--text-dim); margin-top: 4px; letter-spacing: .06em;
+}
+.stats-wrap {
+  padding: 0 24px 8px;
+  max-width: 1148px;
+  margin: -8px auto 32px;
+}
+.domain-bar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--border-bright);
+  background: #000;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+.domain-bar .left { display: flex; align-items: center; gap: 10px; color: var(--text-dim); }
+.domain-bar .left b { color: var(--amber); }
+.domain-bar .right { display: flex; gap: 10px; flex-wrap: wrap; }
+.domain-bar a.chip {
+  padding: 4px 10px;
+  border: 1px solid var(--border-bright);
+  color: var(--text);
+  font-size: 11.5px;
+  transition: all .15s;
+}
+.domain-bar a.chip:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+  background: rgba(204,255,0,.06);
+}
+.domain-bar a.chip.primary {
+  border-color: var(--amber);
+  color: #000;
+  background: var(--amber);
+  font-weight: 600;
+}
+.domain-bar a.chip.primary:hover {
+  background: #dfff33;
+  color: #000;
+}
+.hero-visual {
+  margin: 18px 0 22px;
+  border: 1px solid var(--border-bright);
+  background: #000;
+  overflow: hidden;
+  max-width: 520px;
+}
+.hero-visual img {
+  width: 100%;
+  display: block;
+  max-height: 240px;
+  object-fit: cover;
+}
+
 </style>
 </head>
 <body>
@@ -1001,6 +1176,39 @@ body::after {
 </section>
 
 <!-- ===== RESEARCH / PAPERS ===== -->
+
+<section id="pipeline" class="pipeline">
+  <div class="container">
+    <div class="section-head">
+      <div class="cmd-head"><span class="prompt">refusal@fm:~$</span> <span class="cmd">cat</span> <span class="flag">pipeline.md</span></div>
+      <h2>pipeline.md</h2>
+      <p class="section-desc"># how research moves from probe → paper → chain</p>
+    </div>
+    <div class="pipeline-grid">
+      <div class="pipe-card">
+        <div class="n">01 · PROBE</div>
+        <h4>DBDI subspace scan</h4>
+        <p>Map refusal directions topologically across experts. Detect multiplicative safety pathways before any edit.</p>
+      </div>
+      <div class="pipe-card">
+        <div class="n">02 · QUANTIZE</div>
+        <h4>Streaming bit-width tests</h4>
+        <p>2–8 bit per-tensor streams. Measure where safety circuits fracture under AWQ / GGUF / int4.</p>
+      </div>
+      <div class="pipe-card">
+        <div class="n">03 · SURGERY</div>
+        <h4>Rank-1 Steer2Edit</h4>
+        <p>Minimal weight edits with ΔPPL tracking. Targeted behavioral change, coherence preserved.</p>
+      </div>
+      <div class="pipe-card">
+        <div class="n">04 · BROADCAST</div>
+        <h4>On-chain on Robinhood</h4>
+        <p>Publish findings open. $REFUSE ties research skin-in-the-game to Robinhood Chain retail rails.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="research" class="section">
   <div class="container">
     <div class="section-head">
@@ -1111,6 +1319,45 @@ body::after {
 </section>
 
 <!-- ===== CONTRACT ADDRESS ===== -->
+
+<section id="broadcast" class="x-broadcast">
+  <div class="container">
+    <div class="section-head">
+      <div class="cmd-head"><span class="prompt">refusal@fm:~$</span> <span class="cmd">curl</span> <span class="flag">-s api.x.com/refusalAI</span></div>
+      <h2>broadcast.x</h2>
+      <p class="section-desc"># official signal · verify before any transaction</p>
+    </div>
+    <div class="x-grid">
+      <div class="x-profile">
+        <img class="avatar" src="assets/x/avatar.jpg" alt="@refusalAI" />
+        <h3>refusalfm</h3>
+        <div class="handle">@refusalAI</div>
+        <p class="bio">refusal fm is a working research terminal — every entry is reproducible, every probe is open. Built on Robinhood Chain.</p>
+        <div class="meta-row"><span>network <b>ROBINHOOD</b></span><span>status <b>LIVE</b></span></div>
+        <a class="btn-follow" href="https://x.com/refusalAI" target="_blank" rel="noopener" style="margin-top:0;width:100%;justify-content:center;">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span>follow</span>
+          <span class="handle">@refusalAI</span>
+        </a>
+      </div>
+      <div class="x-post-card">
+        <img src="assets/x/post-hero.jpg" alt="$REFUSE research broadcast post" />
+        <div class="body">
+          <div class="label">// pinned signal · X</div>
+          <p>$Refusal — a terminal-native AI alignment research broadcast, live on Robinhood Chain.
+
+Not another empty AI meme: 217 experiments, 42 mechanisms mapped, open crack toolkit (probe · quantize · rank-1 edit), models from 0.8B → 397B.
+
+Every probe open. Every entry reproducible.
+
+Try it: https://refusalfm.fun</p>
+          <div class="stamp">x.com/refusalAI · refusalfm.fun · Robinhood Chain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contract" class="section">
   <div class="container">
     <div class="section-head">
@@ -1310,7 +1557,7 @@ body::after {
     </div>
 
     <div class="author-card">
-      <div class="pixel" aria-hidden="true"></div>
+      <img src="assets/x/avatar.jpg" alt="@refusalAI" style="width:72px;height:72px;border-radius:8px;border:1px solid var(--border-bright);object-fit:cover;" />
       <div>
         <h3>jinho.jang</h3>
         <p class="role">independent researcher · alignment, interpretability, quantization safety · broadcasting on Robinhood Chain</p>
@@ -1337,7 +1584,7 @@ body::after {
   <div class="container">
     <div class="footer-grid">
       <div class="foot-col">
-        <h5>refusal.fm</h5>
+        <h5>refusal.tech</h5>
         <p class="foot-blurb">An open notebook on MoE alignment, refusal subspaces and weight surgery — broadcasting research from Robinhood Chain. Every entry reproducible, every probe open.</p>
       </div>
       <div class="foot-col">
@@ -1356,13 +1603,15 @@ body::after {
       </div>
       <div class="foot-col">
         <h5>external</h5>
+        <a href="https://refusalfm.fun" target="_blank" rel="noopener">refusalfm.fun</a>
+        <a href="https://github.com/refusalfm/refusal-tech" target="_blank" rel="noopener">github · refusal-tech</a>
         <a href="https://huggingface.co" target="_blank" rel="noopener">hugging face</a>
         <a href="https://github.com" target="_blank" rel="noopener">github</a>
         <a href="https://x.com/refusalAI" target="_blank" rel="noopener">x · @refusalAI</a>
       </div>
     </div>
     <div class="container foot-bottom">
-      <span>© 2026 refusal.fm · Robinhood Chain research broadcast · no warranty</span>
+      <span>© 2026 refusal.fm · refusalfm.fun · Robinhood Chain research broadcast · no warranty</span>
       <span><span class="blink">█</span> EOF</span>
     </div>
   </div>
@@ -1391,7 +1640,7 @@ function tick(){
 tick(); setInterval(tick, 1000);
 
 // active-tab on scroll
-const sections = ['hero','research','findings','contract','crack','models','author'];
+const sections = ['hero','pipeline','research','findings','broadcast','contract','crack','models','author'];
 const tabs = document.querySelectorAll('.tab');
 const sectionEls = sections.map(id => document.getElementById(id));
 window.addEventListener('scroll', () => {
